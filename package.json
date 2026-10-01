@@ -1,0 +1,29 @@
+{
+  "name": "rifaldy-portfolio",
+  "version": "3.0.0",
+  "private": true,
+  "scripts": {
+    "predev": "node scripts/prepare-documentation.mjs",
+    "dev": "node scripts/dev.mjs",
+    "prebuild": "node scripts/prepare-documentation.mjs",
+    "build": "next build --webpack",
+    "start": "node scripts/serve.mjs out 3000",
+    "pretypecheck": "node scripts/prepare-documentation.mjs",
+    "typecheck": "tsc --noEmit",
+    "verify": "node scripts/verify.mjs"
+  },
+  "dependencies": {
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^26.6.3",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5.9.3"
+  }
+}

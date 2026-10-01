@@ -1,0 +1,12 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env
+.env.local
+.env.*
+/private/
+/raw/
+*.log
+.generated/
+public/media/_previews/
